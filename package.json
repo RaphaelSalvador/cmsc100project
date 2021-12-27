@@ -1,0 +1,20 @@
+{
+  "name": "cmsc100project-backend",
+  "version": "0.0.1",
+  "description": "project backend",
+  "main": "index.js",
+  "type": "module", 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaphaelSalvador/cmsc100project-backend.git"
+  },
+  "author": "Raphael Salvador",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/RaphaelSalvador/cmsc100project-backend/issues"
+  },
+  "homepage": "https://github.com/RaphaelSalvador/cmsc100project-backend#readme"
+}
