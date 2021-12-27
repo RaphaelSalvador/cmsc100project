@@ -20,5 +20,8 @@
   "homepage": "https://github.com/RaphaelSalvador/cmsc100project-backend#readme",
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "fastify": "^3.25.2"
   }
 }
