@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
     "url": "https://github.com/RaphaelSalvador/cmsc100project-backend/issues"
   },
   "homepage": "https://github.com/RaphaelSalvador/cmsc100project-backend#readme",
-  "dependencies": {
-    "fastify": "^3.25.2"
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
