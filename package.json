@@ -19,9 +19,13 @@
   },
   "homepage": "https://github.com/RaphaelSalvador/cmsc100project-backend#readme",
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "semistandard": "^16.0.1"
   },
   "dependencies": {
-    "fastify": "^3.25.2"
+    "ajv": "^8.8.2",
+    "fastify": "^3.25.2",
+    "fastify-openapi-glue": "^2.6.5",
+    "fastify-swagger": "^4.13.0"
   }
 }
