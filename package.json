@@ -26,6 +26,7 @@
     "ajv": "^8.8.2",
     "fastify": "^3.25.2",
     "fastify-openapi-glue": "^2.6.5",
+    "fastify-sensible": "^3.1.2",
     "fastify-swagger": "^4.13.0",
     "mongoose": "^6.1.4"
   }

@@ -1,5 +1,8 @@
 import mongoose from 'mongoose';
 import { readFileSync } from 'fs';
+import { createBlogModel } from './models/blog.js';
+
+const models = {};
 
 export const connect = async () => {
     const userPass = readFileSync('config/dev.json', 'utf8');
@@ -12,9 +15,12 @@ export const connect = async () => {
     
     await mongoose.connect(`mongodb+srv://${username}:${password}@${host}/${database}?retryWrites=true&w=majority`);
 
+    models.Blog = createBlogModel(mongoose);
+
     return mongoose;
 };
 
 export {
-    mongoose 
+    mongoose,
+    models
 };
