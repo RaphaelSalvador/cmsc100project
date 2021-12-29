@@ -1,0 +1,6 @@
+{
+    "mongodb": {
+        "host": "project-cluster.jzvjh.mongodb.net",
+        "database": "cmsc100database"
+    }
+}
