@@ -2,6 +2,7 @@ import mongoose from 'mongoose';
 import { readFileSync } from 'fs';
 import { createBlogModel } from './models/blog.js';
 import { createUserModel } from './models/user.js';
+import { createDiscardedTokenModel } from './models/discarded-token.js';
 
 const models = {};
 
@@ -18,6 +19,7 @@ export const connect = async () => {
 
     models.Blog = createBlogModel(mongoose);
     models.User = createUserModel(mongoose);
+    models.DiscardedToken = createDiscardedTokenModel(mongoose);
 
     return mongoose;
 };
