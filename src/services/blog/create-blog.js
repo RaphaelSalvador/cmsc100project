@@ -21,11 +21,5 @@ import { models } from '../../utils/mongodb/index.js';
 
     await blog.save();
 
-    const { _id } = blog;
-
-    return {
-      _id,
-      title,
-      text
-    };
+    return blog;
   }
