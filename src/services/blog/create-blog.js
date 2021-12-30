@@ -9,14 +9,16 @@ import { models } from '../../utils/mongodb/index.js';
  */
 
  export async function createBlog (request, reply) {
-    const { body } = request;
+    const { body, user } = request;
     const { title, text } = body;
+    const { username } = user;
 
     const { Blog } = models;
 
     const blog = new Blog({
         title,
-        text
+        text,
+        username
     });
 
     await blog.save();
