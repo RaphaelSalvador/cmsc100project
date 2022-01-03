@@ -9,7 +9,7 @@ export const get = {
             name: 'limit',
             in: 'query',
             schema: {
-                type: 'number'
+              type: 'number'
             }
         }
     ],

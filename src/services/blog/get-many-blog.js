@@ -8,7 +8,7 @@ import { models } from '../../utils/mongodb/index.js';
  export async function getManyBlog (request) {
     const { query } = request;
 
-    const { limit = 5 } = query;
+    const { limit = 3 } = query;
     
     const { Blog } = models;
 
