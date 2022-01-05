@@ -10,7 +10,16 @@ export const post = {
                 schema: {
                     type: 'object',
                     properties: {
-                        username: {
+                        email: {
+                            type: 'string'
+                        },
+                        firstname: {
+                            type: 'string'
+                        },
+                        lastname: {
+                            type: 'string'
+                        }, 
+                        hobbies: {
                             type: 'string'
                         },
                         password: {
@@ -29,7 +38,13 @@ export const post = {
             schema: {
                 type: 'object',
                 properties: {
-                    username: {
+                    email: {
+                        type: 'string'
+                    },
+                    firstname: {
+                        type: 'string'
+                    },
+                    lastname: {
                         type: 'string'
                     }
                 }

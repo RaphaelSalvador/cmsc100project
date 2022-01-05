@@ -2,9 +2,21 @@ import bcrypt from 'bcrypt';
 
 export const createUserModel = (mongoose) => {
     const schema = new mongoose.Schema({
-        username: {
+        email: {
             type: String,
             unique: true,
+            required: true
+        },
+        firstname: {
+            type: String,
+            required: true
+        },
+        lastname: {
+            type: String,
+            required: true
+        },
+        hobbies: {
+            type: String,
             required: true
         },
         password: {
