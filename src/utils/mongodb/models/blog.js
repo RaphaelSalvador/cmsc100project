@@ -8,7 +8,7 @@ export const createBlogModel = (mongoose) => {
             type: String,
             required: true
         },
-        username: {
+        email: {
             type: String,
             required: true
         },

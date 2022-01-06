@@ -11,11 +11,11 @@ import { models } from '../../utils/mongodb/index.js';
 
  export async function login (request, reply) {
     const { body } = request;
-    const { username, password } = body;
+    const { email, password } = body;
 
     const { User } = models;
 
-    const user = await User.findOne({ username }).exec();
+    const user = await User.findOne({ email }).exec();
 
     if (!user) {
         return reply.notFound();
@@ -26,7 +26,7 @@ import { models } from '../../utils/mongodb/index.js';
     }
 
     const token = this.app.jwt.sign({
-        username
+        email
     });
 
     request.session.token = token;

@@ -27,15 +27,15 @@ async function auth (request, reply, app) {
 
     try{
         await app.jwt.verify(token);
-        const { username } = app.jwt.decode(token);
+        const { email } = app.jwt.decode(token);
 
-        const discarded = await DiscardedToken.findOne({ username, token }).exec();
+        const discarded = await DiscardedToken.findOne({ email, token }).exec();
 
         if (discarded) {
             return reply.unauthorized('auth/discarded');
         }
 
-        const user = await User.findOne({ username }).exec();
+        const user = await User.findOne({ email }).exec();
 
         if (!user) {
             return reply.unauthorized('auth/no-user');

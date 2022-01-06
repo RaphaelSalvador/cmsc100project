@@ -1,6 +1,6 @@
 export const createDiscardedTokenModel = (mongoose) => {
     const schema = new mongoose.Schema({
-        username: {
+        email: {
             type: String,
             required: true
         },

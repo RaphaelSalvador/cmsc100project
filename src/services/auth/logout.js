@@ -11,9 +11,9 @@ export async function logout (request, reply) {
     const { token, user } = request;
     const { DiscardedToken  } = models;
 
-    const {username } = user;
+    const { email } = user;
     const data = new DiscardedToken({
-        username,
+        email,
         token
     });
 
