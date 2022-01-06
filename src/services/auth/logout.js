@@ -9,7 +9,7 @@ import { models } from '../../utils/mongodb/index.js';
  */
 export async function logout (request, reply) {
     const { token, user } = request;
-    const { DiscardedToken  } = models;
+    const { DiscardedToken } = models;
 
     const { email } = user;
     const data = new DiscardedToken({

@@ -13,10 +13,10 @@ export const post = {
                         email: {
                             type: 'string'
                         },
-                        firstname: {
+                        firstName: {
                             type: 'string'
                         },
-                        lastname: {
+                        lastName: {
                             type: 'string'
                         }, 
                         hobbies: {
@@ -41,10 +41,13 @@ export const post = {
                     email: {
                         type: 'string'
                     },
-                    firstname: {
+                    firstName: {
                         type: 'string'
                     },
-                    lastname: {
+                    lastName: {
+                        type: 'string'
+                    },
+                    hobbies: {
                         type: 'string'
                     }
                 }

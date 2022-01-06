@@ -8,11 +8,11 @@ import { models } from '../../utils/mongodb/index.js';
  export async function deleteBlog (request, reply) {
     const { params, user } = request;
     const { id: _id } = params;
-    const { username } = user;
+    const { email } = user;
     
     const { Blog } = models;
 
-    const blog = await Blog.deleteOne({ _id, username });
+    const blog = await Blog.deleteOne({ _id, email });
 
     if (blog.deletedCount === 0 ) {
       return reply.notFound();

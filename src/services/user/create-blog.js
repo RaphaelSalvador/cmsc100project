@@ -10,14 +10,14 @@ import { models } from '../../utils/mongodb/index.js';
 
  export async function createUser (request, reply) {
     const { body } = request;
-    const { email, firstname, lastname, hobbies, password } = body;
+    const { email, firstName, lastName, hobbies, password } = body;
 
     const { User } = models;
 
     const user = new User({
       email,
-      firstname,
-      lastname,
+      firstName,
+      lastName,
       hobbies,
       password
     });
