@@ -11,14 +11,14 @@ import { models } from '../../utils/mongodb/index.js';
  export async function createBlog (request, reply) {
     const { body, user } = request;
     const { title, text } = body;
-    const { email } = user;
+    const { username } = user;
 
     const { Blog } = models;
 
     const blog = new Blog({
         title,
         text,
-        email
+        username
     });
 
     await blog.save();

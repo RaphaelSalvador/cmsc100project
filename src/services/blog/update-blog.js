@@ -12,11 +12,11 @@ import { models } from '../../utils/mongodb/index.js';
     const { body, params, user } = request;
     const { title, text } = body;
     const { id: _id } = params;
-    const { email } = user;
+    const { username } = user;
 
     const { Blog } = models;
 
-    const blog = await Blog.findOneAndUpdate({ _id, email }, {
+    const blog = await Blog.findOneAndUpdate({ _id, username }, {
         title,
         text
     }, {

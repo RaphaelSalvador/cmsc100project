@@ -15,6 +15,11 @@ export const createUserModel = (mongoose) => {
             type: String,
             required: true
         },
+        username: {
+            type: String,
+            unique: true,
+            required: true
+        },
         hobbies: {
             type: String,
         },

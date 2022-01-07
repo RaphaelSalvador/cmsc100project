@@ -18,7 +18,10 @@ export const post = {
                         },
                         lastName: {
                             type: 'string'
-                        }, 
+                        },
+                        username: {
+                            type: 'string'
+                        },
                         hobbies: {
                             type: 'string'
                         },
@@ -45,6 +48,9 @@ export const post = {
                         type: 'string'
                     },
                     lastName: {
+                        type: 'string'
+                    },
+                    username: {
                         type: 'string'
                     },
                     hobbies: {

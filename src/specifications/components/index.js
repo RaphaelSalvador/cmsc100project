@@ -25,7 +25,7 @@ export const components = {
                     text: {
                         type: 'string'
                     },
-                    email: {
+                    username: {
                         type: 'string'
                     },
                     createDate: {
