@@ -10,7 +10,7 @@ import { models } from '../../utils/mongodb/index.js';
 
  export async function createUser (request, reply) {
     const { body } = request;
-    const { email, firstName, lastName, hobbies, password } = body;
+    const { email, firstName, lastName, username, hobbies, password } = body;
 
     const { User } = models;
 
@@ -18,6 +18,7 @@ import { models } from '../../utils/mongodb/index.js';
       email,
       firstName,
       lastName,
+      username,
       hobbies,
       password
     });
