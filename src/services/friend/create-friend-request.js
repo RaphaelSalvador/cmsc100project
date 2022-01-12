@@ -19,8 +19,8 @@ import { models } from '../../utils/mongodb/index.js';
 
     if(!friend) {
         return response.notFound('No User found');
-
     }
+    
     const { FriendRequest } = models;
 
     const friendRequest = new FriendRequest({

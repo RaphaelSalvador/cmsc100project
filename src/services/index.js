@@ -8,6 +8,7 @@ import { createUser } from './user/create-blog.js';
 import { login } from './auth/login.js';
 import { logout } from './auth/logout.js';
 import { createFriendRequest } from './friend/create-friend-request.js';
+import { getFriendRequests } from './friend/get-friend-request.js';
 
 export class Service {
     constructor (app) {
@@ -27,4 +28,5 @@ export class Service {
     logout = logout
 
     createFriendRequest = createFriendRequest
+    getFriendRequests = getFriendRequests
 }

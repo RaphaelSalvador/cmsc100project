@@ -4,18 +4,9 @@ export const get = {
     tags: [
         'Friend'
     ],
-    parameters: [
-        {
-            name: 'limit',
-            in: 'query',
-            schema: {
-              type: 'number'
-            }
-        }
-    ],
     responses: {
       200: {
-        description: 'Gets all friend requests',
+        description: 'Get all friend requests',
         content: {
           'application/json': {
             schema: {
@@ -23,6 +14,9 @@ export const get = {
               items: {
                 username: {
                     type: 'string'
+                },
+                createDate: {
+                  type: 'number'
                 }
               }
             }

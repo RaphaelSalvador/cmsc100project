@@ -1,9 +1,11 @@
 export const createFriendRequestModel = (mongoose) => {
     const friendRequestSchema = new mongoose.Schema({
-
+        username: {
+            type: String,
+            required: [true, "can't be blank"]
+        },
         sender: {
             type: String,
-            unique: true,
             required: [true, "can't be blank"]
         },
         createDate: {
