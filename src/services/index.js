@@ -9,6 +9,7 @@ import { login } from './auth/login.js';
 import { logout } from './auth/logout.js';
 import { createFriendRequest } from './friend/create-friend-request.js';
 import { getFriendRequests } from './friend/get-friend-request.js';
+import { deleteFriendRequest } from './friend/delete-friend-request.js';
 
 export class Service {
     constructor (app) {
@@ -29,4 +30,5 @@ export class Service {
 
     createFriendRequest = createFriendRequest
     getFriendRequests = getFriendRequests
+    deleteFriendRequest = deleteFriendRequest
 }
