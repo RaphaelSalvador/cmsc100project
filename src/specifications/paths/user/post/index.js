@@ -41,15 +41,6 @@ export const post = {
             schema: {
                 type: 'object',
                 properties: {
-                    email: {
-                        type: 'string'
-                    },
-                    firstName: {
-                        type: 'string'
-                    },
-                    lastName: {
-                        type: 'string'
-                    },
                     username: {
                         type: 'string'
                     },

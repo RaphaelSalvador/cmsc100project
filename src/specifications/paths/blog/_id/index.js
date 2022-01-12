@@ -5,5 +5,4 @@ import { del } from './delete/index.js';
 export const blogId = {
     get,
     put,
-    delete: del
   };

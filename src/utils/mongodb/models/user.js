@@ -4,8 +4,10 @@ export const createUserModel = (mongoose) => {
     const schema = new mongoose.Schema({
         email: {
             type: String,
+            lowercase: true,
             unique: true,
-            required: true
+            required: [true, "can't be blank"],
+            index: true
         },
         firstName: {
             type: String,
@@ -18,7 +20,8 @@ export const createUserModel = (mongoose) => {
         username: {
             type: String,
             unique: true,
-            required: true
+            required: [true, "can't be blank"],
+            index: true
         },
         hobbies: {
             type: String,
