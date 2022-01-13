@@ -4,6 +4,7 @@ import { blogId } from './blog/_id/index.js';
 import { user } from './user/index.js';
 import { authLogin, authLogout } from './auth/index.js';
 import { friendRequest } from './friend/request/index.js';
+import { friendList } from './friend/list/index.js';
 
 export const paths = { 
     '/': root,
@@ -13,6 +14,7 @@ export const paths = {
     '/user' : user,
     '/auth/login': authLogin, 
     '/auth/logout': authLogout,
-    '/friend/request': friendRequest
+    '/friend/request': friendRequest,
+    '/friend/list': friendList
 
 };

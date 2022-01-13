@@ -10,6 +10,8 @@ import { logout } from './auth/logout.js';
 import { createFriendRequest } from './friend/create-friend-request.js';
 import { getFriendRequests } from './friend/get-friend-request.js';
 import { deleteFriendRequest } from './friend/delete-friend-request.js';
+import { createFriendList } from './friend/create-friend-list.js';
+import { getFriendList } from './friend/get-friend-list.js';
 
 export class Service {
     constructor (app) {
@@ -31,4 +33,7 @@ export class Service {
     createFriendRequest = createFriendRequest
     getFriendRequests = getFriendRequests
     deleteFriendRequest = deleteFriendRequest
+
+    createFriendList = createFriendList
+    getFriendList = getFriendList
 }

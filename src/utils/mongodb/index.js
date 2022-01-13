@@ -4,6 +4,7 @@ import { createBlogModel } from './models/blog.js';
 import { createUserModel } from './models/user.js';
 import { createDiscardedTokenModel } from './models/discarded-token.js';
 import { createFriendRequestModel } from './models/friend-request.js';
+import { createFriendListModel } from './models/friend-list.js';
 
 const models = {};
 
@@ -22,6 +23,7 @@ export const connect = async () => {
     models.User = createUserModel(mongoose);
     models.DiscardedToken = createDiscardedTokenModel(mongoose);
     models.FriendRequest = createFriendRequestModel(mongoose);
+    models.FriendList = createFriendListModel(mongoose);
 
     return mongoose;
 };
