@@ -4,9 +4,13 @@ import { deleteBlog } from './blog/delete-blog.js';
 import { getBlog } from './blog/get-blog.js';
 import { getManyBlog} from './blog/get-many-blog.js';
 import { updateBlog } from './blog/update-blog.js';
+
 import { createUser } from './user/create-blog.js';
+import { getUser } from './user/get-user.js';
+
 import { login } from './auth/login.js';
 import { logout } from './auth/logout.js';
+
 import { createFriendRequest } from './friend/create-friend-request.js';
 import { getFriendRequests } from './friend/get-friend-request.js';
 import { deleteFriendRequest } from './friend/delete-friend-request.js';
@@ -26,6 +30,7 @@ export class Service {
     deleteBlog = deleteBlog
 
     createUser = createUser
+    getUser = getUser
 
     login = login
     logout = logout

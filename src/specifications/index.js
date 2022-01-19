@@ -40,13 +40,25 @@ export const specification = {
   },
   tags: [
       {
-          name: 'Base',
-          description: 'Base url paths'
+        name: 'Base',
+        description: 'Base url paths'
       },
       {
         name: 'Blog',
         description: 'Blog url paths'
-    }
+      },
+      {
+        name: 'Auth',
+        description: 'Authorization url paths'
+      },
+      {
+        name: 'User',
+        description: 'User url paths'
+      },
+      {
+        name: 'Friend',
+        description: 'Friend url paths'
+      }
   ],
   paths,
   externalDocs: {

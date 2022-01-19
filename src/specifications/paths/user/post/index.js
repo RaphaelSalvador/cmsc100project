@@ -52,5 +52,8 @@ export const post = {
           }
         }
       }
-    }
+    },
+    security: [
+      {}
+    ]
   };
